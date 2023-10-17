@@ -20,6 +20,7 @@ li {
 a {
     text-decoration: none;
     color: #ffffff;
+    transition: color .5s;
 }
 
 a:hover {
@@ -30,4 +31,19 @@ a:hover {
 #first-link::before {
     content: 'Buxtehude';
     margin: 10px;
+}
+
+.container {
+    display: flex;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+img {
+    width: 100px;
+    height: auto;
 }
