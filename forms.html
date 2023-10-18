@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulare</title>
+</head>
+
+<body>
+    <h1>Formular</h1>
+    <form action="/results" method="get">
+        <label for="vorname">Vorname</label>
+        <input required name="vorname" id="vorname" type="text" placeholder="Max">
+        <br>
+        <label for="nachname">Nachname</label>
+        <input name="nachname" id="nachname" type="text" placeholder="Mustermann">
+        <br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="MeinSuperGeheimesPasswort!42">
+        <br>
+        <label for="email">EMail</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="date">Geburtsdatum</label>
+        <input type="date" name="date" id="date">
+        <br>
+        <label for="tel">Telefon</label>
+        <input type="tel" name="tel" id="tel">
+
+        <div>
+            <label for="html">HTML</label>
+            <input required type="radio" name="fav_language" id="html" value="html">
+            <br>
+            <label for="css">CSS</label>
+            <input checked type="radio" name="fav_language" id="css" value="css">
+            <br>
+            <label for="js">JS</label>
+            <input type="radio" name="fav_language" id="js" value="js">
+            <br>
+        </div>
+
+        <div>
+            <label for="code">VSCode</label>
+            <input type="checkbox" name="code" id="code" value="code">
+            <br>
+            <label for="vs">Visual Studio</label>
+            <input type="checkbox" name="vs" id="vs" value="vs">
+            <br>
+            <label for="vim">VIM</label>
+            <input type="checkbox" name="vim" id="vim" value="vim">
+            <br>
+        </div>
+
+        <select name="verkehrsmittel" id="verkehrsmittel" size="2">
+            <option value="bus">Bus</option>
+            <option value="auto">BrummBrumm</option>
+            <option selected value="bike">Drahtesel</option>
+            <option value="escooter">E-Scooter</option>
+        </select>
+
+        <select name="verkehrsmittel" id="verkehrsmittel" multiple>
+            <option value="bus">Bus</option>
+            <option value="auto">BrummBrumm</option>
+            <option value="bike">Drahtesel</option>
+            <option value="escooter">E-Scooter</option>
+        </select>
+        <br>
+        <textarea name="myText" id="myText" cols="80" rows="20"></textarea>
+
+        <br>
+        <button type="submit">Abschicken</button>
+        <button type="reset">Zurücksetzen</button>
+    </form>
+    <form method="post" action="https://pfad-zum-server.com/formvalidation">
+        <label for="vorname">Vorname</label>
+        <input required name="vorname" id="vorname" type="text">
+        <br>
+        <label for="nachname">Nachname</label>
+        <input name="nachname" id="nachname" type="text">
+        <br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        <br>
+        <label for="email">EMail</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="date">Geburtsdatum</label>
+        <input type="date" name="date" id="date">
+        <br>
+        <label for="tel">Telefon</label>
+        <input type="tel" name="tel" id="tel">
+
+        <div>
+            <label for="html">HTML</label>
+            <input type="radio" name="fav_language" id="html" value="html">
+            <br>
+            <label for="css">CSS</label>
+            <input checked type="radio" name="fav_language" id="css" value="css">
+            <br>
+            <label for="js">JS</label>
+            <input type="radio" name="fav_language" id="js" value="js">
+            <br>
+        </div>
+
+        <br>
+        <button type="submit">Abschicken</button>
+        <button type="reset">Zurücksetzen</button>
+    </form>
+</body>
+
+</html>
