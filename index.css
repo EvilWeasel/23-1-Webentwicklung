@@ -1,3 +1,15 @@
+:root {
+    --color-primary: magenta;
+    --color-secondary: purple;
+    --text-shadow: 5px 5px 5px #000000;
+    --opaque-bg: rgba(20,20,20,.7);
+}
+
+@font-face {
+    font-family: 'CaskaydiaCoveNF';
+    src: url('assets/CaskaydiaCoveNerdFont-Regular.ttf'); /* format("opentype") */
+}
+
 body {
     width: 100vw;
     height: 100vh;
@@ -11,16 +23,17 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Roboto Slab', serif;
+    font-family: CaskaydiaCoveNF, 'Roboto Slab', serif;
     font-weight: 500;
+
 }
 
 #clock {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-top: 14rem;
     margin-bottom: 15px;
-    color: magenta;
-    text-shadow: 5px 5px 5px #000000;
+    color: var(--color-primary);
+    text-shadow: var(--text-shadow);
 }
 
 .container {
@@ -29,19 +42,20 @@ body {
     flex-direction: row;
     gap: 5px;
     justify-content: space-around;
+    --my-custom-prop: #000000;
 }
 
 .box {
-    border: 7px double purple;
+    border: 7px double var(--color-secondary);
     border-radius: 0.7em;
-    background-color: rgba(0,0,0,.7);
+    background-color: var(--opaque-bg);
     padding: 10px;
     width: 20vw;
     min-width: 180px;
 }
 
 .box > h2 {
-    color: magenta;
+    color: var(--color-primary);
     margin-top: 0;
 }
 
@@ -58,6 +72,7 @@ body {
 }
 
 .box > ul > li > a:hover {
-    color: magenta;
+    color: var(--color-primary);
     font-weight: 800;
+    text-shadow: var(--text-shadow);
 }
